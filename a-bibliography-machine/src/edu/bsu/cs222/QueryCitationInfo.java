@@ -12,44 +12,44 @@ public class QueryCitationInfo {
     public static String dateAccessed;
     public static String url;
 
-    public static void queryUser(){
-        Scanner in = new Scanner(System.in);
+    public Scanner in = new Scanner(System.in);
 
+    public void queryUser(){
+        queryAuthor();
+        queryArticleName();
+        queryPublisherName();
+        queryPublicationDate();
+        queryDateAccessed();
+        queryURL();
+    }
+
+    public void queryAuthor(){
         System.out.print("Author Name: ");
-        authorName = in.next();
+        authorName = in.nextLine();
+    }
+
+    public void queryArticleName(){
         System.out.print("Article Name: ");
-        articleName = in.next();
+        articleName = in.nextLine();
+    }
+
+    public void queryPublisherName(){
         System.out.print("Publisher: ");
-        publisherName = in.next();
+        publisherName = in.nextLine();
+    }
+
+    public void queryPublicationDate(){
         System.out.print("Date of Publication: ");
-        publicationDate = in.next();
+        publicationDate = in.nextLine();
+    }
+
+    public void queryDateAccessed(){
         System.out.print("Date Accessed: ");
-        dateAccessed = in.next();
-        System.out.print("Url: ");
-        url = in.next();
+        dateAccessed = in.nextLine();
     }
 
-    public String getAuthorName(){
-        return authorName;
-    }
-
-    public String getArticleName(){
-        return articleName;
-    }
-
-    public String getPublisherName(){
-        return publisherName;
-    }
-
-    public String getPublicationDate(){
-        return publicationDate;
-    }
-
-    public String getDateAccessed(){
-        return dateAccessed;
-    }
-
-    public String getUrl(){
-        return url;
+    public void queryURL(){
+        System.out.print("URL: ");
+        url = in.nextLine();
     }
 }
