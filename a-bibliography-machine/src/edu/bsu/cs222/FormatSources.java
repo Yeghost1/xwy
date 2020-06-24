@@ -4,7 +4,7 @@ package edu.bsu.cs222;
 
 public class FormatSources extends QueryCitationInfo{
 
-    public static void formatMLA(){
-        System.out.println(authorName + ". \"" + articleName + "\" " + publisherName + ", " + publicationDate + ", " + url + ". Accessed " + dateAccessed);
+    public static String formatMLA(){
+        return (authorName + ". \"" + articleName + "\" " + publisherName + ", " + publicationDate + ", " + url + ". Accessed " + dateAccessed);
     }
 }

@@ -11,7 +11,7 @@ public class Main extends FormatSources{
         do{
             userInfo.queryUser();
             System.out.println();
-            formatMLA();
+            System.out.println(formatMLA());
 
             System.out.println("Continue? [y or n]: ");
             continueMain = in.nextLine();
