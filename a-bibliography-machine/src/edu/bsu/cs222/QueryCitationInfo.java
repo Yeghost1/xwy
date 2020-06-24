@@ -33,7 +33,7 @@ public class QueryCitationInfo {
         return authorName;
     }
 
-    public String getArticleName(){
+    public  String getArticleName(){
         return articleName;
     }
 
