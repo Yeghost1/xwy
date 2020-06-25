@@ -10,6 +10,7 @@ public class QueryCitationInfo {
     public static String publisherName;
     public static String publicationDate;
     public static String dateAccessed;
+    public static String publicationLocation;
     public static String url;
 
     public Scanner in = new Scanner(System.in);
@@ -19,6 +20,7 @@ public class QueryCitationInfo {
         queryArticleName();
         queryPublisherName();
         queryPublicationDate();
+        queryPublicationLocation();
         queryDateAccessed();
         queryURL();
     }
@@ -41,6 +43,11 @@ public class QueryCitationInfo {
     public void queryPublicationDate(){
         System.out.print("Date of Publication: ");
         publicationDate = in.nextLine();
+    }
+
+    public void queryPublicationLocation(){
+        System.out.print("Location of Publication: ");
+        publicationLocation = in.nextLine();
     }
 
     public void queryDateAccessed(){

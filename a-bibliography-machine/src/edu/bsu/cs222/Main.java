@@ -11,8 +11,12 @@ public class Main extends FormatSources{
         do{
             userInfo.queryUser();
             System.out.println();
-            System.out.println(formatMLA());
-
+            System.out.println("Which format you would like to use?");
+            if(in.nextLine().equals("APA")){
+                System.out.println(formatAPA());
+            }else {
+                System.out.println(formatMLA());
+            }
             System.out.println("Continue? [y or n]: ");
             continueMain = in.nextLine();
 
