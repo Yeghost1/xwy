@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 
 import static org.junit.Assert.*;
 
-public class FormatSourcesTest extends QueryCitationInfo {
+public class FormatSourcesMLATest extends QueryCitationInfo {
     @Test
     public void correctMLATest(){
         QueryCitationInfo queryCitationInfo = new QueryCitationInfo();
