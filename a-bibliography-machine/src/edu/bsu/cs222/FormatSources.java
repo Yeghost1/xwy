@@ -5,10 +5,12 @@ package edu.bsu.cs222;
 public class FormatSources extends QueryCitationInfo{
 
     public static String formatMLA(){
-        return (authorName + ". \"" + articleName + "\" " + publisherName + ", " + publicationDate + ", " + url + ". Accessed " + dateAccessed);
+        String result =  (authorName + ". \"" + articleName + "\" " + publisherName + ", " + publicationDate + ", " + url + ". Accessed " + dateAccessed);
+        return result;
     }
 
-    public static String formatAPA(){
-        return (authorName + ". (" + publicationDate + "). " + articleName + ", " + publicationLocation + ", "+ publisherName + ".");
+    public static String formatAPA() {
+        String result = (authorName + ". (" + publicationDate + "). " + articleName + ", " + publicationLocation + ", " + publisherName + ".");
+        return result;
     }
 }

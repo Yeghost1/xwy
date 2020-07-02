@@ -7,18 +7,29 @@ public class Main extends FormatSources{
         String continueMain = "y";
         QueryCitationInfo userInfo = new QueryCitationInfo();
         Scanner in = new Scanner(System.in);
+        FormatsInArrayList fb=new FormatsInArrayList();
 
         do{
             userInfo.queryUser();
             System.out.println();
             System.out.println("Which format you would like to use?");
-            if(in.nextLine().equals("APA")){
+            String str=in.next();
+            if(str.equals("APA")){
                 System.out.println(formatAPA());
-            }else {
+                fb.createList(formatAPA());
+
+            }else if {
                 System.out.println(formatMLA());
+                fb.createList(formatMLA());
+
+
             }
             System.out.println("Continue? [y or n]: ");
-            continueMain = in.nextLine();
+            continueMain = in.next();
+            if(continueMain.equals("n"))
+            {
+                fb.printList();
+            }
 
         }while(continueMain.equals("y"));
     }

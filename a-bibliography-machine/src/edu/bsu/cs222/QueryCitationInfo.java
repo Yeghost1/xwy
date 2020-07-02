@@ -59,4 +59,5 @@ public class QueryCitationInfo {
         System.out.print("URL: ");
         url = in.nextLine();
     }
+
 }
