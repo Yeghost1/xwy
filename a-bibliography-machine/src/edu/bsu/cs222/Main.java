@@ -18,7 +18,7 @@ public class Main extends FormatSources{
                 System.out.println(formatAPA());
                 fb.createList(formatAPA());
 
-            }else if {
+            }else if{
                 System.out.println(formatMLA());
                 fb.createList(formatMLA());
 

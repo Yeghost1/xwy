@@ -9,11 +9,15 @@ import java.util.Arrays;
 
 public class FormatsInArrayList extends FormatSources {
     public ArrayList<String> list = new ArrayList<String>();
-    public FormatsInArrayList()
-    {
+    public FormatsInArrayList(){}
+    public void createList(String input) {
+
+        {
+            list.add(input);
+            Collections.sort(list);
+        }
 
     }
-   
     public void printList()
     {
         for(String q:list)
